@@ -1,0 +1,37 @@
+<div id="div-user-list">
+  <ul id="list-user">
+  <% users.forEach( function ( user ){ %>
+    <br><br>
+    <li>
+      <table>
+        <tr>
+          <td class="profile-label">ID</td><td class="profile-content"><%= user.id %></td>
+        </tr>
+
+        <tr>
+          <td class="profile-label">PASSWORD</td><td class="profile-content"><%= user.password %></td>
+        </tr>
+
+        <tr>
+          <td class="profile-label">FIRSTNAME</td><td class="profile-content"><%= user.firstname %></td>
+        </tr>
+
+        <tr>
+          <td class="profile-label">MIDDLENAME</td><td class="profile-content"><%= user.middlename %></td>
+        </tr>
+
+        <tr>
+          <td class="profile-label">LASTNAME</td><td class="profile-content"><%= user.lastname %></td>
+        </tr>
+      </table>
+
+
+      <input class="user-list-button" id="button-username" type="button" onclick="location.href='../users/<%= user.username %>';" value="<%= user.username %>" />
+      <input class="user-list-button" id="button-user-edit" type="button" onclick="location.href='./users/<%= user.username %>/edit';" value="EDIT" />
+      <input class="user-list-button" id="button-user-delete" type="button" onclick="if(confirm('DELETE?')){location.href='./users/<%= user.username %>/delete'};" value="DELETE" />
+
+    </li>
+    <br><br>
+  <% }); %>
+  </ul>
+</div>

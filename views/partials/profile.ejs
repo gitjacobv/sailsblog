@@ -1,0 +1,40 @@
+<div id="profile">
+
+  <div id="circle-title-profile">Profile</div>
+
+  <div id="circle-profile">
+    <table>
+      <tr>
+        <td class="profile-label">ID</td><td class="profile-content"><%= user.id %></td>
+      </tr>
+
+      <tr>
+        <td class="profile-label">USERNAME</td><td class="profile-content"><%= user.username %></td>
+      </tr>
+
+      <tr>
+        <td class="profile-label">PASSWORD</td><td class="profile-content"><%= user.password %></td>
+      </tr>
+
+      <tr>
+        <td class="profile-label">FIRSTNAME</td><td class="profile-content"><%= user.firstname %></td>
+      </tr>
+
+      <tr>
+        <td class="profile-label">MIDDLENAME</td><td class="profile-content"><%= user.middlename %></td>
+      </tr>
+
+      <tr>
+        <td class="profile-label">LASTNAME</td><td class="profile-content"><%= user.lastname %></td>
+      </tr>
+    </table>
+  </div>
+
+  <% if( user.username == 'admin') { %>
+    <input class="profile-button" id="button-create-user" type="button" onclick="location.href='./admin/users/new';" value="NEW USER" />
+    <input class="profile-button" id="button-create-post" type="button" onclick="location.href='./admin/posts/new';" value="NEW POST" />
+    <input class="profile-button" id="button-user-list" type="button" onclick="location.href='./admin/users';" value="USERS" />
+    <input class="profile-button" id="button-post-list" type="button" onclick="location.href='./admin/posts';" value="POSTS" />
+  <% } %>
+
+</div>

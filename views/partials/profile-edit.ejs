@@ -1,0 +1,49 @@
+<div id="profile-edit">
+
+  <div id="circle-title">EDIT</div>
+
+  <div id="circle-profile-edit">
+
+    <form id="form-profile-edit" action="/admin/users/<%= user.username %>/update" method="post" onsubmit="return checkSignUp(this);" accept-charset="utf-8">
+
+      <table>
+
+        <tr>
+          <td class="profile-edit-label">USERNAME</td>
+          <td class="profile-edit-content"><input type="text" name="username" value="<%= user.username %>" required/></td>
+        </tr>
+
+        <tr>
+          <td class="profile-edit-label">PASSWORD</td>
+          <td class="profile-edit-content"><input type="password" name="password" value="<%= user.password %>" required/></td>
+        </tr>
+
+        <tr>
+          <td class="profile-edit-label">CONFIRM PASSWORD</td>
+          <td class="profile-edit-content"><input type="password" name="confirm_password" value="<%= user.password %>" required/></td>
+        </tr>
+
+        <tr>
+          <td class="profile-edit-label">FIRSTNAME</td>
+          <td class="profile-edit-content"><input type="text" name="firstname" value="<%= user.firstname %>" required/></td>
+        </tr>
+
+        <tr>
+          <td class="profile-edit-label">MIDDLENAME</td>
+          <td class="profile-edit-content"><input type="text" name="middlename" value="<%= user.middlename %>" required/></td>
+        </tr>
+
+        <tr>
+          <td class="profile-edit-label">LASTNAME</td>
+          <td class="profile-edit-content"><input type="text" name="lastname" value="<%= user.lastname %>" required/></td>
+        </tr>
+
+      </table>
+
+      <button id="button-submit" type="submit">SUBMIT</button>
+
+    </form>
+
+  </div>
+
+</div>

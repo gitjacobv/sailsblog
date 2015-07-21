@@ -28,6 +28,27 @@ module.exports.policies = {
 
   // '*': true,
 
+  'Index': {
+    index: ['isNotLoggedIn'],
+    logout: ['isLoggedIn']
+  },
+
+  'Admin':{
+    '*': ['isLoggedIn', 'isAdmin']
+  },
+
+  'User': {
+    '*': ['isLoggedIn'],
+    home: ['isLoggedIn', 'isCurrentUser']
+  },
+
+  'Post': {
+    '*': ['isLoggedIn', 'isCurrentUser'],
+    'edit': ['isLoggedIn', 'isCurrentUser', 'isAuthor'],
+    'update': ['isLoggedIn', 'isCurrentUser', 'isAuthor'],
+    'delete': ['isLoggedIn', 'isCurrentUser', 'isAuthor']
+  }
+
   /***************************************************************************
   *                                                                          *
   * Here's an example of mapping some policies to run before a controller    *

@@ -1,0 +1,19 @@
+<div id="sign-up">
+
+  <div id="circle-title">EDIT</div>
+
+  <div id="circle-sign-up">
+    <form id="form-post-edit" action="/admin/posts/<%= post.id %>/update" method="post" accept-charset="utf-8">
+
+      <input type="text" size="35" value="<%= post.title %>" name="title" required/>
+      <br><br>
+
+      <textarea rows="10" cols="28" placeholder="<%= post.content %>" name="content" required></textarea>
+      <br><br>
+
+      <button id="button-submit" type="submit">Submit</button>
+
+    </form>
+  </div>
+
+</div>

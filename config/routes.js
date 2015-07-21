@@ -32,13 +32,146 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  //INDEX
+
   '/': {
     view: 'homepage'
   },
 
-  'GET /user': {
-    controller: 'user',
+  'GET /index': {
+    controller: 'index',
     action: 'index'
+  },
+
+  'POST /login':{
+    controller: 'index',
+    action: 'login'
+  },
+
+  'POST /signup':{
+    controller: 'index',
+    action: 'signup'
+  },
+
+  'GET /logout':{
+    controller: 'index',
+    action: 'logout'
+  },
+
+  //ADMIN
+
+  'GET /admin':{
+    controller: 'admin',
+    action: 'home'
+  },
+
+  'GET /admin/users':{
+    controller: 'admin',
+    action: 'user_list'
+  },
+
+  'GET /admin/users/new':{
+    controller: 'admin',
+    action: 'user_new'
+  },
+
+  'POST /admin/users/create':{
+    controller: 'admin',
+    action: 'user_create'
+  },
+
+  'GET /admin/users/:uname/edit':{
+    controller: 'admin',
+    action: 'user_edit'
+  },
+
+  'POST /admin/users/:uname/update':{
+    controller: 'admin',
+    action: 'user_update'
+  },
+
+  'GET /admin/users/:uname/delete':{
+    controller: 'admin',
+    action: 'user_delete'
+  },
+
+  'GET /admin/posts':{
+    controller: 'admin',
+    action: 'post_list'
+  },
+
+  'GET /admin/posts/new':{
+    controller: 'admin',
+    action: 'post_new'
+  },
+
+  'POST /admin/posts/create':{
+    controller: 'admin',
+    action: 'post_create'
+  },
+
+  'GET /admin/posts/:pid/edit':{
+    controller: 'admin',
+    action: 'post_edit'
+  },
+
+  'POST /admin/posts/:pid/update':{
+    controller: 'admin',
+    action: 'post_update'
+  },
+
+  'GET /admin/posts/:pid/delete':{
+    controller: 'admin',
+    action: 'post_delete'
+  },
+
+  //USER
+
+  'GET /users/:uname': {
+    controller: 'user',
+    action: 'home'
+  },
+
+  'GET /users/:uname/edit': {
+    controller: 'user',
+    action: 'edit'
+  },
+
+  'POST /users/:uname/update': {
+    controller: 'user',
+    action: 'update'
+  },
+
+  //POST
+
+  'GET /users/:uname/posts':{
+    controller: 'post',
+    action: 'home'
+  },
+
+  'GET /users/:uname/posts/new':{
+    controller: 'post',
+    action: 'new'
+  },
+
+  'POST /users/:uname/posts/create':{
+    controller: 'post',
+    action: 'create'
+  },
+
+  'GET /users/:uname/posts/:pid/edit':{
+    controller: 'post',
+    action: 'edit'
+  },
+
+  'POST /users/:uname/posts/:pid/update':{
+    controller: 'post',
+    action: 'update'
+  },
+
+  'GET /users/:uname/posts/:pid/delete':{
+    controller: 'post',
+    action: 'delete'
   }
 
   /***************************************************************************

@@ -1,0 +1,489 @@
+body {
+  background: #4b4b4b;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* NAV BAR */
+
+#nav {
+  background: #303030;
+  height: 76px;
+  width: auto;
+}
+
+#logo {
+  float: left;
+  width: 182px;
+  margin: 0px 0px 0px 5px;
+  padding-left: 10px;
+}
+
+#form-login{
+  float: right;
+  color: #D2D8BA;
+  font-weight: bold;
+  padding: 10px 10px 0px 0px;
+}
+
+.table-login-elem{
+  padding: 5px 5px 5px 5px;
+}
+
+#button-login{
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+  background: #80BD01;
+  font-weight: bolder;
+  color: #ffffff;
+  text-align: center;
+}
+
+#nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#navlist {
+  float: right;
+  line-height: 74px;
+}
+
+#navlist li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* NAV BAR */
+
+/* FLASH */
+
+#flash {
+  background: #01bd2e;
+  color: #cccccc;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  clear: right;
+}
+
+/* FLASH */
+
+/* INDEX */
+
+#circle-title{
+  background: #818970;
+  border-radius: 50%;
+  border: 1px;
+  color: #ffffff;
+  width: 125px;
+  height: 125px;
+  top: 27%;
+  left: 35%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 125px;
+  font-weight: bolder;
+  font-size: 18px;
+  z-index: 2;
+}
+
+#circle-sign-up{
+  background: #51bd01;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  top: 28%;
+  left: 38%;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+}
+
+#form-sign-up{
+  position: absolute;
+  top: 15%;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin: auto;
+  height: 200px;
+  font-weight: bold;
+}
+
+#form-sign-up input{
+  border: 1px;
+  padding: 3px 3px 3px 3px;
+  margin: 3px 3px 3px 3px;
+}
+
+#button-submit{
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  height: 70px;
+  width: 70px;
+  border: 0px;
+  border-radius: 50%;
+  background: #1B1B1B;
+  font-weight: bolder;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* INDEX */
+
+/* PROFILE */
+
+#circle-title-profile{
+  background: #747B64;
+  border-radius: 50%;
+  border: 1px;
+  color: #ffffff;
+  width: 125px;
+  height: 125px;
+  top: 27%;
+  left: 35%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 125px;
+  font-weight: bolder;
+  font-size: 18px;
+  z-index: 2;
+}
+
+#circle-profile{
+  background: #B0FE0D;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  top: 28%;
+  left: 38%;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+}
+
+#circle-profile table{
+  position: relative;
+  text-align: left;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+.profile-label{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+}
+
+.profile-content{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+}
+
+#button-create-user{
+  background: #FF1414;
+  border: 0px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: 80%;
+  left: 45%;
+  position: absolute;
+  text-align: center;
+  line-height: 80px;
+  z-index: 2;
+}
+
+#button-create-post{
+  background: #551A8B;
+  border: 0px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: 75%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  line-height: 80px;
+  z-index: 2;
+}
+
+#button-user-list{
+  background: #143BFF;
+  border: 0px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: 70%;
+  left: 55%;
+  position: absolute;
+  text-align: center;
+  line-height: 80px;
+  z-index: 2;
+}
+
+#button-post-list{
+  background: #FF9900;
+  border-radius: 50%;
+  border: 0px;
+  width: 80px;
+  height: 80px;
+  top: 65%;
+  left: 60%;
+  position: absolute;
+  text-align: center;
+  line-height: 80px;
+  z-index: 2;
+}
+
+.profile-button{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+/* PROFILE */
+
+
+/* PROFILE EDIT*/
+#circle-profile-edit{
+  background: #B0FE0D;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  top: 28%;
+  left: 38%;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+}
+
+#circle-profile-edit form {
+  position: relative;
+  text-align: left;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#circle-profile-edit table {
+  margin: auto;
+}
+
+.profile-edit-label{
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+}
+
+.profile-edit-content{
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+}
+
+/* PROFILE EDIT*/
+
+/* USER LIST*/
+
+#list-user li{
+  background: #B0FE0D;
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+#list-user li table{
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.user-list-button{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#button-username{
+  background: #FF1414;
+  border: 0px;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: 0%;
+  text-align: center;
+  line-height: 125px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+#button-user-edit{
+  background: #143BFF;
+  border: 0px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  z-index: 2;
+}
+
+#button-user-delete{
+  background: #FF9900;
+  border-radius: 50%;
+  border: 0px;
+  position: absolute;
+  bottom: 15%;
+  right: 0%;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  z-index: 2;
+}
+
+/* USER LIST*/
+
+
+/* POST LIST*/
+
+#list-post li{
+  background: #B0FE0D;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+#post-title{
+  background: #747B64;
+  border-radius: 50%;
+  border: 1px;
+  color: #ffffff;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 125px;
+  font-weight: bolder;
+  font-size: 18px;
+  z-index: 2;
+}
+
+#post-title-author{
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#post-content{
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bolder;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.post-list-button{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#button-post-edit{
+  background: #143BFF;
+  border: 0px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  z-index: 2;
+}
+
+#button-post-delete{
+  background: #FF9900;
+  border-radius: 50%;
+  border: 0px;
+  position: absolute;
+  bottom: 15%;
+  right: 0%;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  z-index: 2;
+}
+
+/** POST LIST**/
+
+/* POST NEW */
+
+#form-post-new{
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin: auto;
+  height: 200px;
+  font-weight: bold;
+}
+
+
+/** POST NEW **/
+
+/* POST EDIT */
+
+#form-post-edit{
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin: auto;
+  height: 200px;
+  font-weight: bold;
+}
+
+/** POST EDIT **/

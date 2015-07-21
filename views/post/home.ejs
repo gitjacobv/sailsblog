@@ -1,0 +1,21 @@
+<div id="div-post-list">
+  <ul id="list-post">
+  <% posts.forEach( function ( post ){ %>
+    <br><br>
+    <li>
+      <div id="post-title">
+        <%= post.title %>
+      </div>
+
+      <div id="post-content">
+        <%= post.content %>
+      </div>
+
+      <input class="post-list-button" id="button-post-edit" type="button" onclick="location.href='./posts/<%= post.id %>/edit';" value="EDIT" />
+      <input class="post-list-button" id="button-post-delete" type="button" onclick="if(confirm('DELETE?')){location.href='./posts/<%= post.id %>/delete'};" value="DELETE" />
+
+    </li>
+    <br><br>
+  <% }); %>
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+<div id="div-navlist">
+  <ul id="navlist">
+      <% if ( req.session.curr_user ) { %>
+          <% if ( req.session.curr_user != 'admin' ) { %>
+            <li><a href="/users/<%= req.session.curr_user %>">Home</a></li>
+
+            <li><a href="/users/<%= req.session.curr_user%>/edit" >Edit Profile</a></li>
+
+            <li><a href="/users/<%= req.session.curr_user%>/posts" >Posts</a></li>
+
+            <li><a href="/users/<%= req.session.curr_user%>/posts/new" >New Post</a></li>
+          <% } else {%>
+            <li><a href="/admin">Home</a></li>
+          <% } %>
+
+          <li><a href="/logout" >Logout</a></li>
+
+          <li><a href="/index">user: <%= req.session.curr_user %></a></li>
+      <% } %>
+  </ul>
+
+</div>
